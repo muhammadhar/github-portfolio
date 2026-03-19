@@ -3,78 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Haris Khan | Junior DevOps Associate</title>
+    <title>Haris Khan | DevOps Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header / Hero Section -->
-    <header>
-        <div class="container">
-            <h1>Muhammad Haris Khan</h1>
-            <p>Junior DevOps Associate | Git, GitHub, Jenkins, Docker, Kubernetes, Terraform, Grafana, AWS</p>
-            <a href="#contact" class="btn">Hire Me</a>
-        </div>
-    </header>
 
-    <!-- About Me -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Junior DevOps Associate based in Islamabad, Pakistan. I specialize in building automated CI/CD pipelines, containerized applications, and cloud infrastructure using modern DevOps tools. I am passionate about learning and growing in collaboration-driven environments.</p>
-    </section>
+<!-- NAVBAR -->
+<nav>
+    <h2>Haris</h2>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Skills -->
-    <section id="skills">
-        <h2>Skills & Tools</h2>
-        <ul class="skills-list">
-            <li>Git & GitHub</li>
-            <li>Jenkins (CI/CD)</li>
-            <li>Docker & Kubernetes</li>
-            <li>Terraform</li>
-            <li>Grafana & Monitoring</li>
-            <li>AWS (Cloud)</li>
-        </ul>
-    </section>
+<!-- HERO -->
+<header>
+    <h1>Muhammad Haris Khan</h1>
+    <h2 style="min-height:40px;"><span id="typing"></span></h2>
+    <a href="#contact" class="btn">Hire Me</a>
+</header>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="projects/project1.png" alt="Project 1">
-                <h3>CI/CD Pipeline Setup</h3>
-                <p>Automated build and deployment pipeline using Jenkins, Docker, and Kubernetes.</p>
-            </div>
-            <div class="project-card">
-                <img src="projects/project2.png" alt="Project 2">
-                <h3>Terraform Infrastructure</h3>
-                <p>Provisioned cloud infrastructure on AWS using Terraform scripts for a web app.</p>
-            </div>
-            <div class="project-card">
-                <img src="projects/project3.png" alt="Project 3">
-                <h3>Monitoring Dashboard</h3>
-                <p>Set up Grafana dashboards for monitoring application and system metrics.</p>
-            </div>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section id="about" class="reveal">
+    <h2>About Me</h2>
+    <p>
+        I am a DevOps Engineer & Software Engineer focused on CI/CD pipelines,
+        Kubernetes deployments, and cloud infrastructure.
+    </p>
+</section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-            <p id="status"></p>
-        </form>
-    </section>
+<!-- SKILLS -->
+<section id="skills" class="reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Git</span>
+        <span>GitHub</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>Jenkins</span>
+        <span>Terraform</span>
+        <span>Grafana</span>
+        <span>AWS</span>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Muhammad Haris Khan | Based in Islamabad, Pakistan</p>
-        <p>See my portfolio: <a href="https://github.com/hariskhan" target="_blank">GitHub</a></p>
-    </footer>
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <div class="cards">
+        <div class="card">CI/CD Pipeline (Jenkins + Docker)</div>
+        <div class="card">Kubernetes Deployment</div>
+        <div class="card">Terraform AWS Infrastructure</div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="reveal">
+    <h2>Contact</h2>
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+        <p id="status"></p>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Haris Khan</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
