@@ -1,14 +1,19 @@
-# Step 1: Use the official Nginx image
+# Step 1: Build app
+FROM node:18-alpine AS builder
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+
+# Step 2: Serve with nginx
 FROM nginx:alpine
 
-# Step 2: Remove default Nginx website
 RUN rm -rf /usr/share/nginx/html/*
 
-# Step 3: Copy your website files into Nginx's web root
-COPY . /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Step 4: Expose port 80
 EXPOSE 80
 
-# Step 5: Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
