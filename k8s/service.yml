@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: haris-portfolio
+
+spec:
+  selector:
+    app: haris-portfolio
+
+  ports:
+  - port: 80
+    targetPort: 80
+
+  type: ClusterIP
